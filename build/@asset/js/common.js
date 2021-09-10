@@ -1,4 +1,4 @@
-const base_url = location.href;
+const base_url = (location.pathname.indexOf('build') > 0) ? location.pathname.split('build')[0]+'build' : '';
 
 const modals = (function(){
     let $wrap = $('#wrap');
