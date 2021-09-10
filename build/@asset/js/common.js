@@ -1,5 +1,4 @@
-const base_url = location.pathname.split('buile');
-console.log(base_url);
+const base_url = (location.pathname.indexOf('build') > 0) ? location.pathname.split('build')[0]+'build' : '';
 
 const modals = (function(){
     let $wrap = $('#wrap');
@@ -11,7 +10,7 @@ const modals = (function(){
         let modalCode = $(el).data('modal');
         
         $wrap.append($modals);
-        $modals.load( base_url[base_url.length-1] + '/modals/'+ modalCode +'.html #modal_'+ modalCode, function(){
+        $modals.load( base_url + '/modals/'+ modalCode +'.html #modal_'+ modalCode, function(){
             $modals.addClass('show');
             setTimeout(function(){
                 let $btnClose = $modals.find('.modal_close');
