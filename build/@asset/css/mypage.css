@@ -1,0 +1,16 @@
+.mypage .user-info{text-align:center}
+.mypge .mypage .user-info{margin-top:85px}
+.modify .mypage .user-info{margin-bottom:20px}
+.mypage .user-thumb{margin:0 auto 20px}
+.mypage .user-desc{min-height:260px;margin-top:20px}
+.btn_stroke{margin-top:15px}
+.modify .c_inner{width:440px}
+.modify .page-title{font-size:18px;font-weight:700;line-height:2}
+.modify .btn-wrap{margin-top:45px}
+.modify .btn-wrap .btn_stroke{width:100%;margin-top:25px}
+.inp_wrap{margin-top:25px}
+.inp_title{display:block;margin-bottom:7px}
+.inp_input{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;height:30px;padding:0 11px;border-radius:5px;color:rgba(0,0,0,.8)}
+.inp_input:-moz-read-only{background:#8e8e8e}
+.inp_input:read-only{background:#8e8e8e}
+.inp_textarea{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;padding:11px;border-radius:5px;color:rgba(0,0,0,.8)}
