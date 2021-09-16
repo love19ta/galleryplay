@@ -38,6 +38,7 @@ i[class^=icon_]::before{content:'';display:block}
 .slick-dots li{display:inline-block}
 .slick-dots button{display:block;overflow:hidden;width:10px;height:10px;margin:0 5px;background:#8e8e8e;border-radius:50%;text-indent:-999px}
 .slick-dots .slick-active button{background:#fff}
+.sub-title{margin:65px 0 60px;font-size:24px;font-weight:700}
 .header{position:relative;z-index:1;min-height:60px;border-bottom:1px solid #ccc}
 .header a{display:inline-block}
 .header .c_inner{padding-top:12px;padding-bottom:12px}
