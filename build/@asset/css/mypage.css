@@ -5,7 +5,7 @@
 .mypage .user-desc{min-height:260px;margin-top:20px}
 .btn_stroke{margin-top:15px}
 .modify .c_inner{width:440px}
-.modify .page-title{font-size:18px;font-weight:700;line-height:2}
+.modify .page-title{margin-top:20px;font-size:18px;font-weight:700;line-height:2}
 .modify .btn-wrap{margin-top:45px}
 .modify .btn-wrap .btn_stroke{width:100%;margin-top:25px}
 .inp_wrap{margin-top:25px}
@@ -18,3 +18,6 @@
 .inp_check+.inp_title{padding-left:23px}
 .inp_check+.inp_title::before{content:'';display:block;position:absolute;left:0;top:0;width:15px;height:15px;background:url(../images/inp_check.png) 0 0/100% auto no-repeat}
 .inp_check:checked+.inp_title::before{background-position:0 100%}
+@media (max-width:767px){
+.modify .c_inner{width:auto;padding:0 38px}
+}

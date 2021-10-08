@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Gallery Play</title>
+	<link rel="stylesheet" href="./@asset/css/common.css">
+	<link rel="stylesheet" href="./@asset/css/modal.css">
+	<link rel="stylesheet" href="./@asset/css/main.css">
+</head>
+<body>
+<div id="wrap">
+	@@include('./_header.html')
+	
+	<!-- main content -->
+	<main id="container">
+		<div class="kv-visual">
+			<div class="c_inner pd-none">
+				<div class="title-box">
+					<p class="title"> 실시간으로 소통하는 3차원 가상 전시,<br>갤러리플레이에서 경험하세요 </p>
+					<p class="en-title">Revolutionize the way you promote your art online - with Galleryplay.</p>
+				</div>
+				<div class="visual-slide">
+					<!-- [D]: data-bg는 슬라이드가 change할때 변경되는 배경색 hex코드 입니다. -->
+					<figure class="visual-item"> 
+						<img src="./@asset/images/@temp/kv-visual_img.jpg" alt="">
+					</figure>
+					<figure class="visual-item" data-bg="#000">
+						<video src="./@asset/videos/temp_galleryplay_main.mp4" autoplay muted></video>
+					</figure>
+					<figure class="visual-item" data-bg="#ff0"> 
+						<img src="./@asset/images/@temp/kv-visual_img.jpg" alt="">
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<div class="sort c_inner">
+			<div class="sort-cate">
+				<ul>
+					<li class="active"><button class="btn-sort" data-cate="cate0">전체</button></li>
+					<li><button class="btn-sort" data-cate="cate1">회화</button></li>
+					<li><button class="btn-sort" data-cate="cate2">사진</button></li>
+					<li><button class="btn-sort" data-cate="cate3">도예</button></li>
+					<li><button class="btn-sort" data-cate="cate4">아카데믹</button></li>
+				</ul>
+			</div>
+			<div class="sort-list">
+				<ul>
+					<li data-sort="cate1">
+						<figure><img src="./@asset/images/@temp/main_thumb.jpg" alt=""></figure>
+						<button class="btn_modal" data-modal="exhibition"><span class="blind">전시관 상세 팝업보기</span></button>
+					</li>
+					<li data-sort="cate2">
+						<figure><img src="./@asset/images/@temp/main_thumb.jpg" alt=""></figure>
+						<button class="btn_modal" data-modal="exhibition"><span class="blind">전시관 상세 팝업보기</span></button>
+					</li>
+					<li data-sort="cate1">
+						<figure><img src="./@asset/images/@temp/main_thumb.jpg" alt=""></figure>
+						<button class="btn_modal" data-modal="exhibition"><span class="blind">전시관 상세 팝업보기</span></button>
+					</li>
+					<li data-sort="cate3">
+						<figure><img src="./@asset/images/@temp/main_thumb.jpg" alt=""></figure>
+						<button class="btn_modal" data-modal="exhibition"><span class="blind">전시관 상세 팝업보기</span></button>
+					</li>
+					<li data-sort="cate1">
+						<figure><img src="./@asset/images/@temp/main_thumb.jpg" alt=""></figure>
+						<button class="btn_modal" data-modal="exhibition"><span class="blind">전시관 상세 팝업보기</span></button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<!-- main content -->
+
+	@@include('./_footer.html')
+</div>
+
+<script src="./@asset/js/jquery-3.6.0.min.js"></script>
+<script src="./@asset/js/common.js"></script>
+<script src="./@asset/js/slick.min.js"></script>
+<script src="./@asset/js/main.js"></script>
+
+</body>
+</html>

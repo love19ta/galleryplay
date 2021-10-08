@@ -10,13 +10,13 @@ a,button{color:#e5e5e5;text-decoration:none}
 a:hover,button:hover{color:#8e8e8e;cursor:pointer}
 button{background:0 0;border:none;border-radius:0}
 em,i{font-style:normal}
-body{background-color:#1e1e1e;font-family:'Noto',sans-serif;font-size:14px;font-weight:400;color:#e5e5e5;line-height:1.15;min-width:1200px}
+body{background-color:#1e1e1e;font-family:'Noto',sans-serif;font-size:14px;font-weight:400;color:#e5e5e5;line-height:1.15}
 img{vertical-align:top}
 input{border:0}
 #wrap{overflow:hidden;width:100%}
 .blind{position:absolute;overflow:hidden;width:1px;height:1px;text-indent:-999em}
 #container{min-height:620px}
-.c_inner{display:block;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;width:1200px;margin:0 auto;padding:20px}
+.c_inner{display:block;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;max-width:1200px;margin:0 auto;padding:20px}
 .c_inner.small{width:570px}
 .c_flex-side{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .pd-none{padding:0!important}
@@ -58,3 +58,13 @@ i[class^=icon_]::before{content:'';display:block}
 .footer__link dl{display:inline-block;min-width:173px}
 .footer__link dt{font-size:14px;font-weight:700;line-height:1.7}
 .footer__link dd{line-height:2.4}
+@media (max-width:1199px){
+.slick-arrow{display:none!important}
+}
+@media (max-width:767px){
+.c_inner.small{width:auto}
+.footer{font-size:10px;text-align:center}
+.footer .c_flex-side{display:block}
+.footer__link{margin-top:25px}
+.footer__link dl{margin-top:35px}
+}

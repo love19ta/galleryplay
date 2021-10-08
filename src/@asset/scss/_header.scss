@@ -1,0 +1,66 @@
+.header{
+	position: relative;
+	z-index: 1;
+	min-height: 60px;
+	border-bottom: 1px solid #ccc;
+	a{
+		display: inline-block;
+	}
+	.c_inner{
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	&__nav{
+		position: relative;
+		.log-in{
+			margin-right: 35px;
+			padding: 5px 10px;
+		}
+		.user-menu{
+			position: relative;
+		}
+		.user-thumb{
+			width: 35px;
+			height: 35px;
+			margin-right: 14px;
+		}
+		.arrow{
+			display: block;
+			position: absolute;
+			top: 13px;
+			right: 0;
+			width: 4px;
+			height: 8px;
+			background: url($root+'/images/arrow_round.svg') no-repeat 0 50% / 100% auto;
+			transform: rotate(-90deg);
+			transition: transform .5s;
+			@at-root .on#{&}{
+				transform: rotate(90deg);	
+			}
+		}
+		&-list{
+			position: absolute;
+			top: 40px;
+			right: 0;
+			box-sizing: border-box;
+			width: 100px;
+			border-radius: 5px;
+			background: $modal-cont-bg;
+			padding: 4px 10px;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateY(-20px);
+			transition: all .5s;
+			li{
+				line-height: 2.14;
+			}
+
+			&.show{
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0);
+			}
+		}
+	}
+}

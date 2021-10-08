@@ -1,0 +1,41 @@
+// required
+@import "base";
+@import "input";
+
+.contact{
+    .page-title{
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        small{
+            display: block;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+    }
+    .c_inner{
+        margin-top: 150px;
+        @include mobile(){
+          margin-top: 20px;
+        }
+    }
+    .inner{
+        width: 400px;
+        margin:78px auto 0;
+        @include mobile(){
+          width: auto;
+          padding: 0 18px;
+        };
+    }
+    .inp_note{
+        font-size: 18px;
+    }
+    .btn{
+        &-wrap{
+            margin-top: 25px;
+        }
+        &_stroke{
+            width: 100%;
+        }
+    }
+}
