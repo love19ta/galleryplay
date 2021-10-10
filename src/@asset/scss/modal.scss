@@ -34,8 +34,19 @@
         width: 24px;
         height: 24px;
         background: url(../images/btn_modal.svg) no-repeat 50% / 100% auto;
-        &:hover{
-            background-image: url(../images/btn_modal-over.svg);
+        
+        @include pc(){
+            &:hover{
+                background-image: url(../images/btn_modal-over.svg);
+            }
+        }
+        @include mo-tablet(){
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: #1E1E1E;
+            background-size: 66%;
+            background-position: 50% 60%;
         }
     }
 }
@@ -63,17 +74,39 @@
 
 .m_exhibition{
     overflow: hidden;
-    height: 450px;
+    @include pc(){
+        height: 450px;
+    }
+    @include tablet(){
+        width: 600px;
+    }
+    @include mo-tablet(){
+        height: 95%;
+    }
+    @include mobile(){
+        width: 95%;
+
+    }
     .c_flex-side{
         align-items: flex-start;
+        @include mo-tablet(){
+            display: block;
+            height: 100%;
+            overflow: auto;
+        }
     }
     .ex{
         &-play{
             position: relative;
             width: 600px;
+            @include mo-tablet(){
+                width: auto;
+            }
             .thumb{
-                width: 600px;
-                height: 450px;
+                @include pc(){
+                    width: 600px;
+                    height: 450px;
+                }
                 overflow: hidden;
                 img{
                     width: 100%;
@@ -84,6 +117,10 @@
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+
+                @include mo-tablet(){
+                    margin-top: 10px;
+                }
 
                 .icon_play span{
                     display: block;
@@ -118,13 +155,23 @@
                     margin-top: 15px;
                     padding-bottom: 30px;
                     border-bottom: 1px solid $border-bg;
+                    @include mo-tablet(){
+                        font-size: 12px;
+                    }
                 }
                 &-name{
                     font-weight: bold;
+                    @include mo-tablet(){
+                        font-size: 14px;
+                    }
                 }
                 &-thumb{
                     margin-left: 15px;
                     margin-right: 20px;
+                    @include mo-tablet(){
+                        width: 60px;
+                        height: 60px;
+                    }
                 }
                 &-desc{
                     overflow: hidden;
@@ -137,8 +184,12 @@
                     }
                     .title{
                         display: block;
-                        font-size: $f-size-xl;
                         margin-bottom: 20px;
+                        font-size: $f-size-xl;
+                        font-weight: bold;
+                        @include mo-tablet(){
+                            font-size: 18px;
+                        }
                     }
                     .desc{
                         font-size: $f-size-m;

@@ -14,6 +14,10 @@
         bottom: 50px;
         left: 60px;
         left: 20px;
+        pointer-events: none;
+        @include tablet(){
+          left: 40px;
+        }
         @include mobile(){
           left: 20px;
         }
@@ -22,13 +26,13 @@
             font-weight: bold;
             line-height: 1.3;
 
-            @include mobile(){
+            @include mo-tablet(){
               font-size: $f-size-l;
             }
         }
         .en-title{
             margin-top: 20px;
-            @include mobile(){
+            @include mo-tablet(){
               font-size:  $f-size-m;
             }
         }
@@ -38,7 +42,7 @@
         position: relative;
         // max-height: 400px;
         padding-top: 33.34%;
-        @include mo-tablet(){
+        @include mobile(){
           padding-top: 256px;
         }
 
@@ -47,7 +51,7 @@
           top: 0;
           left: 0;
           width: 100%;
-          @include mo-tablet(){
+          @include mobile(){
             width: $tablet;
             left: 50%;
             transform: translateX(-50%);
@@ -67,20 +71,28 @@
 }
 
 .sort{
+  @include pc(){
     min-height: 670px;
+  }
+    @include tablet(){
+      padding: 10px 14px 60px;
+    }
     @include mobile(){
       min-height: 0;
       padding: 10px 5px 20px;
     }
     &-cate{
         margin-top: 10px;
-        @include mobile(){
+        @include mo-tablet(){
           margin-top: 0;
         }
         ul{
             display: flex;
             align-items: flex-start;
             margin-left: 15px;
+            @include tablet(){
+              margin-left: 10px;
+            }
             li{
                 position: relative;
                 padding: 0 16px;
@@ -123,13 +135,18 @@
 
     &-list{
         margin-top: 24px;
-
+        @include mo-tablet(){
+          margin-top: 0;
+        }
         ul{
             overflow: hidden;
             margin-top: -10px;
             margin-left: -10px;
+            @include tablet(){
+              margin-top: 0;
+            }
             @include mobile(){
-              margin-top: -12px;
+              margin-top: 5px;
               margin-left: -5px;
             }
         }
@@ -166,7 +183,7 @@
 }
 
 .footer{
-  @include mobile(){
+  @include mo-tablet(){
     margin-top: 0;
   }
 }

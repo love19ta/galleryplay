@@ -74,3 +74,9 @@
     @content;
   }
 }
+
+@mixin pc {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}

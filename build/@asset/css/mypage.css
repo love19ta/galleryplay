@@ -8,6 +8,7 @@
 .modify .page-title{margin-top:20px;font-size:18px;font-weight:700;line-height:2}
 .modify .btn-wrap{margin-top:45px}
 .modify .btn-wrap .btn_stroke{width:100%;margin-top:25px}
+.modify .btn-wrap .btn_stroke:first-child{margin-top:0}
 .inp_wrap{margin-top:25px}
 .inp_wrap.checkbox{position:relative}
 .inp_title{display:block;margin-bottom:7px}

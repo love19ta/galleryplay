@@ -1,3 +1,5 @@
+const isMobile = (navigator.userAgent.indexOf('Mobi') > -1) ? true : false;
+
 const slider = function(){
     let $slider = $('.visual-slide');
     let $item = $slider.find('.visual-item');

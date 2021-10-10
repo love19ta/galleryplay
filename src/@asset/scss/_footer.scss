@@ -4,8 +4,10 @@
 	margin-bottom: 30px;
 	border-top: 1px solid $border-bg;
 	font-size: $f-size-m;
-  @include mobile(){
+  @include mo-tablet(){
     font-size: $f-size-s;
+  }
+  @include mobile(){
     text-align: center;
   }
 	.c_flex-side{
@@ -43,4 +45,11 @@
       line-height: 2.4;
     }
 	}
+
+  .logo{
+    @include mobile(){
+      margin: 0 auto;
+    }
+    a{display: inline-block;}
+  }
 }

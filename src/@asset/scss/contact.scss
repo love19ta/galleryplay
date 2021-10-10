@@ -7,14 +7,25 @@
         text-align: center;
         font-size: 36px;
         font-weight: bold;
+        @include mo-tablet(){
+            font-size: 24px;
+        }
+
         small{
             display: block;
             margin-bottom: 20px;
             font-size: 24px;
+            @include mo-tablet(){
+                margin-bottom: 15px;
+                font-size: 14px;
+            }
         }
     }
     .c_inner{
         margin-top: 150px;
+        @include tablet(){
+            margin-top: 70px;
+        }
         @include mobile(){
           margin-top: 20px;
         }
@@ -29,6 +40,9 @@
     }
     .inp_note{
         font-size: 18px;
+        @include mo-tablet(){
+            font-size: 14px;
+        }
     }
     .btn{
         &-wrap{

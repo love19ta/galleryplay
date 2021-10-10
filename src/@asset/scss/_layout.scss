@@ -7,7 +7,9 @@
 }
 
 #container{
-    min-height: 620px;
+    @include pc(){
+        min-height: 620px;
+    }
 }
 
 .c{
@@ -26,6 +28,10 @@
               width: auto;
             }
         }
+
+        figure img{
+            width: 100%;
+        }
     }
     &_flex-side{
         display: flex;
@@ -39,7 +45,9 @@
 
 .logo{
     width: 173px;
-    height: 35px;
+    @include mo-tablet(){
+        width: 148px;
+    }
     img{
         width: 100%;
     }
@@ -161,4 +169,7 @@ i[class^='icon_']{
     margin: 65px 0 60px;
     font-size: 24px;
     font-weight: bold;
+    @include mo-tablet(){
+        margin: 32px 0 105px;
+    }
 }
