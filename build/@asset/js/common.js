@@ -1,5 +1,5 @@
 const base_url = (location.pathname.indexOf('build') > 0) ? location.pathname.split('build')[0]+'build' : '';
-const isMobile = (navigator.userAgent.indexOf('Mobi') > -1) ? true : false;
+const isMobile = (window.innerWidth > 1024) ? false : true;
 
 const modals = (function(){
     let $wrap = $('#wrap');
