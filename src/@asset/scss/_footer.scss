@@ -33,6 +33,7 @@
       display: inline-block;
       min-width: 173px;
       @include mobile(){
+        display: block;
         margin-top: 35px;
       }
     }

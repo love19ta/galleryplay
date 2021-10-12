@@ -93,6 +93,6 @@ i[class^=icon_]::before{content:'';display:block}
 .footer{text-align:center}
 .footer .c_flex-side{display:block}
 .footer__link{margin-top:25px}
-.footer__link dl{margin-top:35px}
+.footer__link dl{display:block;margin-top:35px}
 .footer .logo{margin:0 auto}
 }
