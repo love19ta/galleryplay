@@ -33,6 +33,9 @@
     .inner{
         width: 400px;
         margin:78px auto 0;
+        @include mo-tablet(){
+            margin-top: 50px;
+        }
         @include mobile(){
           width: auto;
           padding: 0 18px;

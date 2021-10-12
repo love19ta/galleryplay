@@ -18,6 +18,7 @@
 @media (max-width:1024px){
 .contact .page-title{font-size:24px}
 .contact .page-title small{margin-bottom:15px;font-size:14px}
+.contact .inner{margin-top:50px}
 .contact .inp_note{font-size:14px}
 }
 @media (max-width:767px){
