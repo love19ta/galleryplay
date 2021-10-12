@@ -104,6 +104,9 @@ i[class^='icon_']{
         font-size: 15px;
         font-weight: bold;
         line-height: 28px;
+        &:first-child{
+            margin-top: 0;
+        }
     }
 }
 

@@ -1,4 +1,5 @@
 const base_url = (location.pathname.indexOf('build') > 0) ? location.pathname.split('build')[0]+'build' : '';
+const isMobile = (navigator.userAgent.indexOf('Mobi') > -1) ? true : false;
 
 const modals = (function(){
     let $wrap = $('#wrap');
@@ -56,6 +57,27 @@ const userMenu = function(){
 
 }
 
+const mobileMenu = function(){
+    if(!isMobile) return false;
+
+    let $headerNav = $('.header__nav');
+    const $menu = $headerNav.find('.mobile-menu');
+
+    $menu.on('click', function(e){
+        e.preventDefault();
+        
+        if($headerNav.hasClass('show')){
+            $headerNav.removeClass('show');
+            $menu.attr('title', 'open');
+            $headerNav.find('.inner').slideUp();
+        }else{
+            $headerNav.addClass('show');
+            $menu.attr('title', 'close');
+            $headerNav.find('.inner').slideDown();
+        }
+    })
+}
+
 $(document).ready(function(){
     
     $('.btn_modal').on('click', function(e){
@@ -69,4 +91,5 @@ $(document).ready(function(){
     });
 
     userMenu();
+    mobileMenu();
 });

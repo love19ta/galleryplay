@@ -8,6 +8,10 @@
                 margin-bottom: 20px;
             }
             text-align: center;
+
+            .btn_stroke{
+                margin-top: 15px;
+            }
         }
         &-thumb{
             margin: 0 auto 20px;
@@ -17,9 +21,6 @@
             margin-top: 20px;
         }
     }
-}
-.btn_stroke{
-    margin-top: 15px;
 }
 
 .modify{
@@ -43,9 +44,6 @@
         .btn_stroke{
             width: 100%;
             margin-top: 25px;
-            &:first-child{
-                margin-top: 0;
-            }
         }
     }
 }

@@ -19,10 +19,10 @@
 .sort-list li figure{width:100%;height:100%;background:#333}
 .sort-list li img{width:100%}
 .sort-list .btn_modal{position:absolute;left:0;top:0;width:100%;height:100%}
-@media (min-width:768px){
+@media (min-width:1025px){
 .sort{min-height:670px}
 }
-@media (max-width:1199px){
+@media (max-width:1024px){
 .kv-visual .title-box .title{font-size:18px}
 .kv-visual .title-box .en-title{font-size:12px}
 .footer,.sort-cate,.sort-list{margin-top:0}
@@ -36,7 +36,7 @@
 .sort-list ul{margin-top:5px;margin-left:-5px}
 .sort-list li{width:50%;padding-top:5px;padding-left:5px}
 }
-@media (min-width:768px) and (max-width:1199px){
+@media (min-width:768px) and (max-width:1024px){
 .kv-visual .title-box{left:40px}
 .sort{padding:10px 14px 60px}
 .sort-cate ul{margin-left:10px}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery Play</title>
     <link rel="stylesheet" href="./@asset/css/common.css">
     <link rel="stylesheet" href="./@asset/css/modal.css">
@@ -20,20 +20,28 @@
                         <figure class="logo"><img src="./@asset/images/logo.png" alt="Gallery Play"></figure>
                     </a></h1>
                 <nav class="header__nav">
-                    <!-- [D]: log-in -->
-                    <!-- <button class="btn_modal log-in" data-modal="login">로그인</button> -->
-
-                    <!-- [D]: user mode -->
-                    <button class="user-menu" title="open">
-                        <figure class="user-thumb"><img src="./@asset/images/@temp/user-thumb.jpg" alt="user thumbnail"></figure>
-                        <i class="arrow"></i>
+                    <button class="mobile-menu" title="open">
+                        <i class="icon"></i>
+                        <span class="blind">menu</span>
                     </button>
-                    <ul class="header__nav-list">
-                        <li><a href="./mypage/index.html">마이페이지</a></li>
-                        <li><a href="#!">로그아웃</a></li>
-                    </ul>
-                </nav>
+                    <div class="inner">
+                        <!-- [D]: log-in -->
+                        <!-- <button class="btn_modal log-in" data-modal="login">로그인</button>
+                <a href="#!" class="log-in">전시 문의하기</a> -->
 
+
+                        <!-- [D]: user mode -->
+                        <button class="user-menu" title="open">
+                            <figure class="user-thumb"><img src="./@asset/images/@temp/user-thumb.jpg" alt="user thumbnail"></figure>
+                            <i class="arrow"></i>
+                        </button>
+                        <ul class="header__nav-list">
+                            <li><a href="./mypage/index.html">마이페이지</a></li>
+                            <li><a href="#!">로그아웃</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
             </div>
         </header>
         <!-- //header -->

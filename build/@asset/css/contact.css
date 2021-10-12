@@ -15,7 +15,7 @@
 .contact .inp_note{font-size:18px}
 .contact .btn-wrap{margin-top:25px}
 .contact .btn_stroke{width:100%}
-@media (max-width:1199px){
+@media (max-width:1024px){
 .contact .page-title{font-size:24px}
 .contact .page-title small{margin-bottom:15px;font-size:14px}
 .contact .inp_note{font-size:14px}
@@ -24,6 +24,6 @@
 .contact .c_inner{margin-top:20px}
 .contact .inner{width:auto;padding:0 18px}
 }
-@media (min-width:768px) and (max-width:1199px){
+@media (min-width:768px) and (max-width:1024px){
 .contact .c_inner{margin-top:70px}
 }

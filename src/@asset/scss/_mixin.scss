@@ -64,19 +64,19 @@
 }
 
 @mixin mo-tablet {
-  @media ( max-width: #{$screen-max - 1px}) {
+  @media ( max-width: #{$screen-min - 1px}) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: #{$tablet}) and (max-width: #{$screen-max - 1px}) {
+  @media (min-width: #{$tablet}) and (max-width: $screen-min - 1px) {
     @content;
   }
 }
 
 @mixin pc {
-  @media (min-width: #{$tablet}) {
+  @media (min-width: $screen-min) {
     @content;
   }
 }
