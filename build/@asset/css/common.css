@@ -10,7 +10,7 @@ a,button{color:#e5e5e5;text-decoration:none}
 a:hover,button:hover{color:#8e8e8e;cursor:pointer}
 button{background:0 0;border:none;border-radius:0}
 em,i{font-style:normal}
-body{background-color:#1e1e1e;font-family:'Noto',sans-serif;font-size:14px;font-weight:400;color:#e5e5e5;line-height:1.15}
+body{background-color:#1e1e1e;font-family:'Noto',sans-serif;font-size:14px;font-weight:400;color:#e5e5e5;line-height:1.5}
 img{vertical-align:top}
 input{border:0}
 #wrap{overflow:hidden;width:100%}

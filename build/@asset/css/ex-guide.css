@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap);
+#wrap{overflow:visible}
+.sticky-menu{position:sticky;top:0;z-index:10;display:-webkit-box;display:-ms-flexbox;display:flex;padding-left:20px;mix-blend-mode:exclusion}
+.sticky-menu a{display:block;position:relative;padding:15px 20px;font-size:24px}
+.sticky-menu a::before,.sticky-menu a:last-child:after{content:'';width:1px;position:absolute;left:0;top:15px;bottom:15px;background:#fff}
+.sticky-menu a:last-child:after{left:auto;right:0}
+.section{border-bottom:1px solid #ccc;padding-bottom:120px}
+.section .btn_stroke{display:block;width:400px;margin:0 auto;text-align:center}
+.title-box{text-align:center}
+.title{display:block;font-size:36px;font-weight:700;line-height:1.36}
+.subject-box .title{margin-top:50px;margin-bottom:30px}
+.list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;text-align:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+.list li{-webkit-box-sizing:border-box;box-sizing:border-box}
+.list strong{display:block;margin-top:20px;margin-bottom:24px;font-size:24px}
+.visual{padding-bottom:150px}
+.visual-video video{width:100%}
+.visual .title-box{margin-top:70px;text-align:center}
+.visual .title-box .desc{margin-top:70px;font-size:24px;line-height:1.5}
+.visual .list{margin-top:95px}
+.visual .list li{width:33%;padding:0 20px;margin-bottom:60px}
+.visual .list figure{width:240px;margin:0 auto}
+.service .list{margin-top:80px}
+.service .list li{width:25%;padding:0 10px}
+.service .list .num{display:block;margin:0 auto;width:150px;height:150px;background:#e5e5e5;border-radius:50%;color:#000;font-size:72px;font-weight:700;line-height:150px;font-family:'Noto sans'}
+.service .list strong{margin-top:40px}
+.service .title-box{margin-top:130px}
+.service .title-box .title{margin-bottom:50px}
+.template .title-box{margin-top:40px}
+.template .list-box{margin-top:80px}
+.template .list-box .list{margin:20px 15px 0}
+.template .list-box li{position:relative;width:33.33%;padding:5px}
+.template .list-box li button{position:absolute;left:0;top:0;width:100%;height:100%}
+.template .list-title strong{font-size:24px;font-weight:700}
+.pricing{padding-bottom:0;border-bottom:0}
+.pricing .title-box{margin-top:80px}
+.pricing .title-box .title{font-size:24px;font-weight:400}
+.pricing .title-box .title strong{font-size:36px}
+.pricing .list-price{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.pricing .list-price>li{-webkit-box-sizing:border-box;box-sizing:border-box;width:25%;padding:0 10px;color:#000}
+.pricing .list-price .inner{-webkit-box-sizing:border-box;box-sizing:border-box;height:100%;padding:35px 40px 50px;background:#fff;border-radius:20px}
+.pricing .list-price .price-box{position:relative;margin:0 -40px 30px;text-align:center}
+.pricing .list-price .level{display:block;font-size:24px}
+.pricing .list-price .price{display:inline-block;position:relative;margin-top:35px;padding:0 10px;font-size:24px;color:#8e8e8e}
+.pricing .list-price .price::after{content:'';display:block;position:absolute;left:0;top:50%;width:100%;height:2px;background:#000}
+.pricing .list-price .discount{font-size:48px;font-weight:700;color:#db0000}
+.pricing .list-price .discount-price{display:block;margin-top:20px;font-size:48px;font-weight:700;color:#1e1e1e}
+.pricing .list-price .contact{display:block;font-size:36px;font-weight:700;line-height:168px}
+.pricing .list-price .icon-list{margin-top:40px}
+.pricing .list-price .icon-list li{position:relative;margin-top:20px;padding-left:23px}
+.pricing .list-price .icon-list li::before{content:'';display:block;position:absolute;left:0;top:0;width:20px;height:20px;background:url(../images/icon_check.svg) 50% 50%/16px 16px no-repeat}
+.pricing .desc-box{margin-top:80px}
+.pricing .desc-box p{margin-top:15px}
+@media (max-width:1024px){
+.title{font-size:24px}
+.visual{padding-bottom:100px}
+.visual .title-box .desc{margin-top:40px;font-size:14px}
+.service .list{margin:20px 30px 0}
+.template .list-box .list{margin:20px -5px 0}
+.pricing .list-price .discount-price{margin-top:0}
+.pricing .list-price .contact{line-height:148px}
+.pricing .btn-wrap{margin-top:40px}
+}
+@media (max-width:767px){
+.sticky-menu{padding-left:15px}
+.sticky-menu a{padding:6px 15px;font-size:14px}
+.sticky-menu a::before,.sticky-menu a:last-child:after{top:10px;bottom:10px}
+.section{padding:0 20px 100px}
+.section .btn_stroke{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%}
+.visual-video{margin:0 -20px}
+.visual .title-box{margin-top:56px}
+.visual .list{margin-top:70px;margin-bottom:-70px}
+.visual .list li{width:100%;padding:0;margin-bottom:70px}
+.service .list li{width:100%;padding:0;margin-top:60px}
+.template .list-box{margin-top:60px}
+.template .list-box .list{margin-left:-15px;margin-right:-15px}
+.template .list-box li{width:50%;padding:3px}
+.template .list-title span{display:block}
+.pricing{padding-bottom:0}
+.pricing .list-price>li{width:100%;margin-top:40px;padding:0 25px}
+.pricing .desc-box{margin-top:40px}
+}
+@media (min-width:768px) and (max-width:1024px){
+.sticky-menu a{font-size:18px}
+.subject-box{margin-left:20px}
+.visual .list li{width:50%}
+.service .list li{width:50%;padding:0 25px;margin-top:60px}
+.template .list-box{margin-left:20px;margin-right:20px}
+.pricing .list-price>li{width:50%;margin-top:60px;padding:0 30px}
+}
