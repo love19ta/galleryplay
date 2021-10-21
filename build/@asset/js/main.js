@@ -84,11 +84,20 @@ const modalTab = function () {
     });
 }
 
+const modalInput = function () {
+    $(document).on('focus', '.inp_input.btn_modal', function (e) {
+        e.preventDefault();
+
+        modals.open(this);
+    });
+}
+
 
 $(document).ready(function () {
 
     slider();
     sorting();
     modalTab();
+    modalInput();
 
 });
