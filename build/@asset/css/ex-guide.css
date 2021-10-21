@@ -35,7 +35,7 @@
 .pricing .title-box{margin-top:80px}
 .pricing .title-box .title{font-size:24px;font-weight:400}
 .pricing .title-box .title strong{font-size:36px}
-.pricing .list-price{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
+.pricing .list-price{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:60px}
 .pricing .list-price>li{-webkit-box-sizing:border-box;box-sizing:border-box;width:25%;padding:0 10px;color:#000}
 .pricing .list-price .inner{-webkit-box-sizing:border-box;box-sizing:border-box;height:100%;padding:35px 40px 50px;background:#fff;border-radius:20px}
 .pricing .list-price .price-box{position:relative;margin:0 -40px 30px;text-align:center}
@@ -76,6 +76,7 @@
 .template .list-box li{width:50%;padding:3px}
 .template .list-title span{display:block}
 .pricing{padding-bottom:0}
+.pricing .list-price{margin-top:90px}
 .pricing .list-price>li{width:100%;margin-top:40px;padding:0 25px}
 .pricing .desc-box{margin-top:40px}
 }

@@ -294,6 +294,10 @@
     .list-price{
         display: flex;
         flex-wrap: wrap;
+        margin-top: 60px;
+        @include mobile(){
+            margin-top: 90px;
+        }
         > li{
             box-sizing: border-box;
             width: 25%;
