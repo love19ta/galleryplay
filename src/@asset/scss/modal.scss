@@ -349,7 +349,9 @@
                 &.host{
                     @include pc(){
                         overflow: auto;
+                        width: 100%;
                         height: 100%;
+                        padding-right: 50px;
                     }
                 }
                 &.reply{
@@ -370,7 +372,9 @@
                         flex-direction: column-reverse;
                         @include pc(){
                             overflow: auto;
+                            width: 100%;
                             height: 300px;
+                            padding-right: 50px;
                         }
                         @include mo-tablet(){
                             flex-direction: column;
@@ -413,7 +417,6 @@
         display: block;
         padding-bottom: 20px;
         @include pc(){
-            overflow: auto;
             height: 100%;
         }
 
@@ -421,6 +424,15 @@
             position: static;
             height: 100%;
             overflow: auto;
+        }
+
+        .inner{
+            @include pc(){
+                overflow: auto;
+                width: 100%;
+                height: 100%;
+                padding-right: 50px;
+            }
         }
     }
     

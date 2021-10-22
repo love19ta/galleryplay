@@ -20,10 +20,7 @@
         display: block;
         position: relative;
         padding: 15px 20px;
-        font-size: $f-size-xl;
-        @include tablet(){
-            font-size: $f-size-l;
-        }
+        font-size: $f-size-l;
         @include mobile(){
             padding:  6px 15px;
             font-size: $f-size-default;
@@ -34,8 +31,8 @@
             width: 1px;
             position: absolute;
             left: 0;
-            top: 15px;
-            bottom: 15px;
+            top: 22px;
+            bottom: 22px;
             background: #fff;
             @include mobile(){
                 top: 10px;
@@ -406,6 +403,7 @@
     }
 
     .btn-wrap{
+        margin-top: 70px;
         @include mo-tablet(){
             margin-top: 40px;
         }

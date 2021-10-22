@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap);
 #wrap{overflow:visible}
 .sticky-menu{position:sticky;top:0;z-index:10;display:-webkit-box;display:-ms-flexbox;display:flex;padding-left:20px;mix-blend-mode:exclusion}
-.sticky-menu a{display:block;position:relative;padding:15px 20px;font-size:24px}
-.sticky-menu a::before,.sticky-menu a:last-child:after{content:'';width:1px;position:absolute;left:0;top:15px;bottom:15px;background:#fff}
+.sticky-menu a{display:block;position:relative;padding:15px 20px;font-size:18px}
+.sticky-menu a::before,.sticky-menu a:last-child:after{content:'';width:1px;position:absolute;left:0;top:22px;bottom:22px;background:#fff}
 .sticky-menu a:last-child:after{left:auto;right:0}
 .section{border-bottom:1px solid #ccc;padding-bottom:120px}
 .section .btn_stroke{display:block;width:400px;margin:0 auto;text-align:center}
@@ -50,6 +50,7 @@
 .pricing .list-price .icon-list li::before{content:'';display:block;position:absolute;left:0;top:0;width:20px;height:20px;background:url(../images/icon_check.svg) 50% 50%/16px 16px no-repeat}
 .pricing .desc-box{margin-top:80px}
 .pricing .desc-box p{margin-top:15px}
+.pricing .btn-wrap{margin-top:70px}
 @media (max-width:1024px){
 .title{font-size:24px}
 .visual{padding-bottom:100px}
@@ -81,7 +82,6 @@
 .pricing .desc-box{margin-top:40px}
 }
 @media (min-width:768px) and (max-width:1024px){
-.sticky-menu a{font-size:18px}
 .subject-box{margin-left:20px}
 .visual .list li{width:50%}
 .service .list li{width:50%;padding:0 25px;margin-top:60px}
