@@ -1,0 +1,56 @@
+
+.footer{
+	margin-top: 70px;
+	margin-bottom: 30px;
+	border-top: 1px solid $border-bg;
+	font-size: $f-size-m;
+  @include mo-tablet(){
+    font-size: $f-size-s;
+  }
+  @include mobile(){
+    text-align: center;
+  }
+	.c_flex-side{
+		align-items: flex-start;
+    @include mobile(){
+      display: block;
+    }
+	}
+	&__info{
+		.info{
+			margin-top: 10px;
+			line-height: 1.8;
+			.copy{
+				margin-top: 25px;
+			}
+		}
+	}
+	&__link{
+    @include mobile(){
+      margin-top: 25px;
+    }
+    dl{
+      display: inline-block;
+      min-width: 173px;
+      @include mobile(){
+        display: block;
+        margin-top: 35px;
+      }
+    }
+    dt{
+      font-size: $f-size-default;
+      font-weight: bold;
+      line-height: 1.7;
+    }
+    dd{
+      line-height: 2.4;
+    }
+	}
+
+  .logo{
+    @include mobile(){
+      margin: 0 auto;
+    }
+    a{display: inline-block;}
+  }
+}

@@ -1,0 +1,12 @@
+abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,header,hgroup,html,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,pre,q,ruby,s,samp,section,small,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+button{background:0 0;border:none;border-radius:0}
+body{background-color:#1e1e1e;font-size:14px;color:#e5e5e5;line-height:1.14;min-width:1200px}
+#wrap a,#wrap button{color:#e5e5e5}
+#wrap a:hover,#wrap button:hover{color:#8e8e8e}
+.c_inner{display:block;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;width:1200px;margin:0 auto;padding:20px}
+.c_flex-side{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}

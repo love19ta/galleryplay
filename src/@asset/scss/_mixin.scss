@@ -1,0 +1,82 @@
+/* aspect ratio */
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before { display: block; content: ""; width: 100%; padding-top: ($height / $width) * 100%; }
+  > .inner { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+}
+
+
+/// Append defined string to parent selector
+/// @require {function} parent-append
+/// @param {String} $appendix - selector that we want append to parent
+/// @param {Number} $parent [1] - index of parent selector
+/// @param {Boolean} $at-start [false] - append to start of parent selector
+/// // Usage
+// .ancestor {
+//   display: inline-flex;
+
+//   .grandparent {
+//     padding: 32px;
+//     background-color: lightgreen;
+
+//     .parent {
+//       padding: 32px;
+//       background-color: blue;
+
+//       .elem {
+//         padding: 16px;
+//         background-color: white;
+
+//         @include parent-append(":focus", 3) {
+//           box-shadow: inset 0 0 0 8px aqua;
+//         }
+
+//         @include parent-append(":hover") {
+//           background-color: fuchsia;
+//         }
+
+//         @include parent-append("p", 0, true) {
+//           background-color: green;
+//         }
+//       }
+//     }
+//   }
+// }
+/// @result
+/// .ancestor:focus .grandparent .parent .elem {box-shadow: inset 0 0 0 8px aqua;}
+/// .ancestor .grandparent .parent:hover .elem {background-color: fuchsia;}
+/// .ancestor .grandparent .parent p.elem {background-color: green;}
+///
+@mixin parent-append($appendix, $parent: 1, $at-start: false) {
+   @at-root #{parent-append($appendix, $parent, $at-start)} {
+      @content;
+   }
+}
+
+@mixin sub-title(){
+   font-size: 24px;
+}
+
+@mixin mobile {
+  @media ( max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin mo-tablet {
+  @media ( max-width: #{$screen-min - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: $screen-min - 1px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: $screen-min) {
+    @content;
+  }
+}

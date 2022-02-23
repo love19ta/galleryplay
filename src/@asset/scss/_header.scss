@@ -1,0 +1,186 @@
+.header{
+	position: relative;
+	z-index: 10;
+	border-bottom: 1px solid #ccc;
+	min-height: 60px;
+	@include mo-tablet(){
+		min-height: 50px;
+	}
+	a{
+		display: inline-block;
+	}
+	.c_inner{
+		padding-top: 12px;
+		padding-bottom: 12px;
+		@include mo-tablet(){
+			display: block;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+
+	&__nav{
+		position: relative;
+		@include mo-tablet(){
+			position: static;
+		}
+		.log-in{
+			margin-right: 35px;
+			padding: 5px 10px;
+		}
+		.user-menu{
+			position: relative;
+		}
+		.user-thumb{
+			width: 35px;
+			height: 35px;
+			margin-right: 14px;
+			@include mo-tablet(){
+				width: 60px;
+				height: 60px;
+			}
+		}
+		.arrow{
+			display: block;
+			position: absolute;
+			
+			@include pc(){
+				top: 13px;
+				right: 0;
+				width: 4px;
+				height: 8px;
+				background: url($root+'/images/arrow_round.svg') no-repeat 0 50% / 100% auto;
+				transform: rotate(-90deg);
+				transition: transform .5s;
+
+				@at-root .on#{&}{
+					transform: rotate(90deg);	
+				}
+			}
+			@include mo-tablet(){
+				display: none;
+			}
+		}
+		&-list{
+			@include pc(){
+				position: absolute;
+				top: 40px;
+				right: 0;
+				box-sizing: border-box;
+				width: 100px;
+				border-radius: 5px;
+				background: $modal-cont-bg;
+				padding: 4px 10px;
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(-20px);
+				transition: all .5s;
+				li{
+					line-height: 2.14;
+				}
+	
+				&.show{
+					opacity: 1;
+					visibility: visible;
+					transform: translateY(0);
+				}
+			}
+
+		}
+	}
+
+	.mobile-menu{
+		@include pc(){
+			display: none;
+		}
+		@include mo-tablet(){
+			position: absolute;
+			top: 13px;
+			right: 20px;
+			width: 24px;
+			height: 24px;
+			&::before,
+			&::after{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 4px;
+				left: 3px;
+				width: 18px;
+				height: 2px;
+				background: #fff;
+				border-radius: 2px;
+				transition: all .15s;
+			}
+			&::after{
+				bottom: 4px;
+				top: auto;
+			}
+			.icon{
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 3px;
+				width: 18px;
+				height: 2px;
+				margin-top: -1px;
+				background: #fff;
+				transform: none;
+			}
+			@include parent-append('.show ',0, true){
+				
+				.icon{
+					display: none;
+				}
+				&::before{
+					top: 44%;
+					transform: rotate(45deg);
+				}
+				&::after{
+					bottom: 46%;
+					transform: rotate(-45deg);
+				}
+			}
+			
+		}
+
+	}
+	.inner{
+		@include pc(){
+			display: flex ;
+			flex-direction: row-reverse;
+		}
+		@include mo-tablet(){
+
+			position: absolute;
+			top: 51px;
+			left: 0;
+			box-sizing: border-box;
+			width: 100%;
+			// height: 100vh;
+			padding: 15px 25px;
+			background-color: $modal-cont-bg;
+			display: none;
+	
+			> *,
+			.header__nav-list li{
+				display: block;
+				box-sizing: border-box;
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				font-size: 15px;
+				line-height: 44px;
+				text-align: center;
+			}
+
+			.user-menu{
+				pointer-events: none;
+			}
+			.user-thumb{
+				margin: 20px auto 10px;
+			}
+
+		}
+	}
+}

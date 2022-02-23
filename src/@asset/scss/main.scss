@@ -1,0 +1,192 @@
+// required
+@import "base";
+
+
+.kv-visual{
+    overflow: hidden;
+    position: relative;
+    background: $modal-cont-bg;
+    transition: background .5s;
+
+    .title-box{
+        position: absolute;
+        z-index: 1;
+        bottom: 50px;
+        left: 60px;
+        left: 20px;
+        pointer-events: none;
+        @include tablet(){
+          left: 40px;
+        }
+        @include mobile(){
+          left: 20px;
+        }
+        .title{
+            font-size: $f-size-xl;
+            font-weight: bold;
+            line-height: 1.3;
+
+            @include mo-tablet(){
+              font-size: $f-size-l;
+            }
+        }
+        .en-title{
+            margin-top: 20px;
+            @include mo-tablet(){
+              font-size:  $f-size-m;
+            }
+        }
+    }
+    .visual-slide{
+        overflow: hidden;
+        position: relative;
+        // max-height: 400px;
+        padding-top: 33.34%;
+        @include mobile(){
+          padding-top: 256px;
+        }
+
+        .slick-list{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          @include mobile(){
+            width: $tablet;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        .visual-item{
+            width: 100%;
+            float: left;
+            img{
+              width: 100%;
+            }
+        }
+    }
+    video{
+        width: 100%;
+    }
+}
+
+.sort{
+  @include pc(){
+    min-height: 670px;
+  }
+    @include tablet(){
+      padding: 10px 14px 60px;
+    }
+    @include mobile(){
+      min-height: 0;
+      padding: 10px 5px 20px;
+    }
+    &-cate{
+        margin-top: 10px;
+        @include mo-tablet(){
+          margin-top: 0;
+        }
+        ul{
+            display: flex;
+            align-items: flex-start;
+            margin-left: 15px;
+            @include tablet(){
+              margin-left: 10px;
+            }
+            li{
+                position: relative;
+                padding: 0 16px;
+                @include mobile(){
+                  padding: 0 10px;
+                }
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    bottom: 2px;
+                    width: 1px;
+                    background: $f-color;
+                }
+
+                &.active{
+                    font-weight: bold;
+                    .btn-sort{
+                        color: #fff;
+                    }
+                }
+
+                &:last-child{
+                    &::after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 2px;
+                        bottom: 2px;
+                        width: 1px;
+                        background: $f-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &-list{
+        margin-top: 24px;
+        @include mo-tablet(){
+          margin-top: 0;
+        }
+        ul{
+            overflow: hidden;
+            margin-top: -10px;
+            margin-left: -10px;
+            @include tablet(){
+              margin-top: 0;
+            }
+            @include mobile(){
+              margin-top: 5px;
+              margin-left: -5px;
+            }
+        }
+        li{
+            overflow: hidden;
+            position: relative;
+            float: left;
+            box-sizing: border-box;
+            width: 33.33%;
+            padding-top: 10px;
+            padding-left: 10px;
+            @include mobile(){
+              width: 50%;
+              padding-top: 5px;
+              padding-left: 5px;
+            }
+            figure{
+                width: 100%;
+                height: 100%;
+                background: #333;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .btn_modal{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.footer{
+  @include mo-tablet(){
+    margin-top: 0;
+  }
+}
+
+
+

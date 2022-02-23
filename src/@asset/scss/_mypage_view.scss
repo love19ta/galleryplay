@@ -1,0 +1,49 @@
+.mypage{
+    .user{
+        &-info{
+            @at-root .mypge &{
+                margin-top: 85px;
+            }
+            @at-root .modify &{
+                margin-bottom: 20px;
+            }
+            text-align: center;
+
+            .btn_stroke{
+                margin-top: 15px;
+            }
+        }
+        &-thumb{
+            margin: 0 auto 20px;
+        }
+        &-desc{
+            min-height: 260px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.modify{
+
+    .c_inner{
+      width: 440px;
+      @include mobile(){
+        width: auto;
+        padding: 0 38px;
+      }
+    }
+    .page-title{
+      margin-top: 20px;
+      font-size: $f-size-l;
+      font-weight: bold;
+      line-height: 2;
+    }
+
+    .btn-wrap{
+        margin-top: 45px;
+        .btn_stroke{
+            width: 100%;
+            margin-top: 25px;
+        }
+    }
+}
